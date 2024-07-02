@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#click").click(function(){
+                $(".one").css("display","none")
+                $(".two").css("display","none")
+                $(".three").css("display","block")
+                
+            })
+        })
+    </script>
+    <style>
+        form{
+            padding: 20px;
+        }
+        body{
+            background-image: url(IMAGES/form1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1,h2{
+            text-align: center;
+            
+        }
+        
+        .one{
+            position: relative;
+            display: block;
+            top: 100px;
+            background-color: white;
+            height: 400px;
+            width: 400px;
+            left: 240px;
+            color: black;
+            opacity: 0.8;
+            background-image: url(IMAGES/loading.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .two{
+            position: absolute;
+            display: block;
+            margin-top: 108px;
+            left: 650px;
+            height: 400px;
+            width: 400px;
+            background-color: white;
+            top: 0;
+            color: black;
+            opacity: 0.8;
+            background-image: url(IMAGES/wip.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .three{
+            position: absolute;
+            display: none;
+            top: 108px;
+            background-color: white;
+            height: 400px;
+            width: 450px;
+            left: 450px;
+            color: black;
+            background-image: url(IMAGES/123w.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        label{
+            margin-left: 10px;
+            opacity: 0.8;
+        }
+        .a,
+        .b,
+        .c,
+        .d,
+        .e{
+            height: 20px;
+            width: 330px;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+        #para{
+            margin-left: 60px;
+        }
+        button{
+            text-align: center;
+            height: 30px;
+            width: 250px;
+            margin-left: 50px;
+            border-radius: 10px;
+        }
+        #click{
+            text-align: center;
+            margin-left: 70px;
+        }
+        .three button{
+            display: inline-block;
+            height: 25px;
+            width: 150px;
+            margin-left:30px ;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    
+        <div class="one">
+            <form action="">    
+            <h1>Login</h1><br>
+            <label>Email: </label><br> <input type="email" class="a"><br><br>
+            <label>Password: </label><br> <input type="password" class="b"><br><br>
+            <p style="text-align: center;"><b>Forgot password?</b></p>
+            <button>Login</button>
+            <p style="text-align: center;">Don't have an account? <b>Signup</b></p>
+        </form>
+        </div>
+            <div class="two">
+
+    
+            <h2>REGISTRATION</h2>
+            <h2>Wipro</h2>
+            <p id="para">Western India Palm Refined Oils Limited</p>
+            <p id="para"><b>Wanted Full Stack Developer</b></p>
+            <p id="para">Good MNC Company</p>
+            <p id="para">Technology Service and Consulting Company</p>
+            <p id="para">Internship with Placements</p>
+            <P id="para">Coimbatore</P>
+            <Button id="click">Register Now</Button>
+        </div>
+        <div class="three">
+            <form action="">
+            <h2>Registration Form</h2>
+            <label>Name: </label><br><input type="text" class="c"><br><br>
+            <label>Email: </label><br><input type="email" class="d"><br><br>
+            <label>Password: </label><br><input type="password" class="e"><br><br><br>
+            <button>Cancel</button>
+            <button>Apply Now</button>
+        </form>
+        </div>
+
+</body>
+</html>
